@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: krzysztof
   Date: 27.04.19
-  Time: 16:13
+  Time: 23:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,11 +11,13 @@
 
 <html>
 <head>
-    <title>homePage</title>
+    <title>formCategory</title>
 </head>
 <body>
-<a href="/authors/">All Authors</a><br>
-<a href="/categories/">All Categories</a><br>
-
+<form:form method="post" modelAttribute="category">
+    name: <form:input path="name"/><br>
+    description: <form:input path="description"/><br>
+    <input type="submit" value="Save"/>
+</form:form>
 </body>
 </html>

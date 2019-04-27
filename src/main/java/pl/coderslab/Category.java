@@ -12,6 +12,7 @@ public class Category {
     @Column(length = 100)
     private String name;
 
+    @Column(length = 500)
     private String description;
 
     public Category() {
