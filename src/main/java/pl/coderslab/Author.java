@@ -1,6 +1,9 @@
 package pl.coderslab;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "authors")
@@ -9,7 +12,10 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotEmpty
     private String firstName;
+
+    @NotEmpty
     private String lastName;
 
     public Author() {

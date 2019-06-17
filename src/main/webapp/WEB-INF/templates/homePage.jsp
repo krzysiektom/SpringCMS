@@ -16,6 +16,7 @@
 <body>
 <a href="/authors/">All Authors</a><br>
 <a href="/categories/">All Categories</a><br>
+<a href="/articles/">All Articles</a><br>
 
 </body>
 </html>
